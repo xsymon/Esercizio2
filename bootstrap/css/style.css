@@ -1,0 +1,41 @@
+.form-custom{
+    width:30%;
+    margin:auto;
+    background-color:#f5f5f5;
+    border:1px solid rgb(209, 208, 208);
+    border-radius: 4px;
+    padding: 2%;
+    align-content: center;
+}
+
+
+.form-control.sized-input{
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form-row{
+    margin-bottom: 3%;
+}
+
+#form-button{
+    width:80%;
+}
+
+.form-control#userInput{
+    border-radius: 2px;
+}
+
+.form-control#pwdInput{
+    border-radius:2px;
+}
+
+.hidden-box{
+    display: none;
+}
+
+.btn.btn-primary.sized-input{
+    width:80%;
+}

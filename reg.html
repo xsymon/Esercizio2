@@ -1,0 +1,52 @@
+<html>
+    <head>
+            <title>Sign Up</title>
+            <!--CSS aggiuntivo-->
+            <link rel="stylesheet" href="bootstrap/css/style.css">
+            <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+            <script src="bootstrap/js/script.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="text-center">
+        <!--Alert Box-->
+        <div class="alert alert-danger hidden-box" id="alert-box">
+            <h2 class="text-center">Errore nella registrazione!</h2>
+        </div>
+        <!--Success Box-->
+        <div class="alert alert-success hidden-box" id="success-box">
+            <h2 class="text-center">Registrazione effettuata!</h2>
+        </div>
+        <!--Form-->
+        <div class="form-custom">
+            <h1 class="text-center">Sign Up</h1>
+            <div class="row" id="form-row">
+                <input type="text" class="form-control sized-input" id="name" placeholder="Nome" required> 
+            </div>
+            <div class="row" id="form-row">
+                <input type="text" class="form-control sized-input" id="last-name" placeholder="Cognome" required>
+            </div>
+            <div class="row" id="form-row">
+                <input type="date" class="form-control sized-input" id="date" required>
+            </div>
+            <div class="row" id="form-row">
+                <input type="email" class="form-control sized-input" id="mail" placeholder="E-mail" required>
+            </div>
+            <div class="row" id="form-row">
+                <input type="password" class="form-control sized-input" id="pwd" placeholder="Password" required>
+            </div>
+            <div class="row" id="form-row">
+                <input type="password" class="form-control sized-input" id="conf-pwd" placeholder="Conferma password" required>
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-primary sized-input" id="reg-button"><b>Sign Up</b></button>
+            </div>
+        </div>
+        <!--End of form-->
+        <div class="row">
+            <a href="index.html"class="text-center"><- Back to log-in</a>
+        </div>
+
+    </body>
+</html>
