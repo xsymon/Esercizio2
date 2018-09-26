@@ -17,6 +17,7 @@
         <div class="alert alert-success hidden-box" id="success-box">
             <h2 class="text-center">Accesso riuscito!</h2>
         </div>
+        <!--Log In Form-->
         <div class="form-custom">
             <h1 class="text-center">Log In</h1>
             <div class="row" id="form-row">
@@ -30,16 +31,57 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <input type="checkbox">
-                    <label>Remember Me</label>
+                    <label><input type="checkbox" > Remember Me</label>
+                    
                 </div>
                 <div class="col-md-6">
-                    <a href="#">Forgot Password?</a>
+                    <a href="#" class="text-center" id="forgot-pwd">Forgot Password</a>
                 </div>
             </div>
         </div>
+        <!--Log In Form End-->
+        <!--Sign Up Form-->
+        <div class="form-custom2">
+                <h1 class="text-center">Sign Up</h1>
+                <div class="row" id="form-row">
+                    <input type="text" class="form-control sized-input" id="name" placeholder="Nome" required> 
+                </div>
+                <div class="row" id="form-row">
+                    <input type="text" class="form-control sized-input" id="last-name" placeholder="Cognome" required>
+                </div>
+                <div class="row" id="form-row">
+                    <input type="date" class="form-control sized-input" id="date" required>
+                </div>
+                <div class="row" id="form-row">
+                    <input type="email" class="form-control sized-input" id="mail" placeholder="E-mail" required>
+                </div>
+                <div class="row" id="form-row">
+                    <input type="password" class="form-control sized-input" id="pwd" placeholder="Password" required>
+                </div>
+                <div class="row" id="form-row">
+                    <input type="password" class="form-control sized-input" id="conf-pwd" placeholder="Conferma password" required>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-primary sized-input" id="reg-button"><b>Sign Up</b></button>
+                </div>
+        </div>
+        <!--Sign Up Form End-->
+        <!--Forgot Password Form-->
+        <div class="form-custom3">
+            <h1>Forgot Password</h1>
+            <div class="row" id="form-row">
+                <input type="mail" class="form-control sized-input" id="forgot-mail" placeholder="Mail" required> 
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-primary sized-input" id="reg-button"><b>Send Password</b></button>
+            </div>
+        </div>
+        <!--Forgot Password Form End-->
         <div class="row">
-            <a href="reg.html"class="text-center">Create an account</a>
+            <a href="#"class="text-center" id="signinbutton">Create an account</a>
+        </div>
+        <div class="row">
+            <a href="index.html" class="text-center" id="backbutton"><- Back</a>
         </div>
     </body>
 </html>

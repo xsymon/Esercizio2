@@ -8,6 +8,28 @@
     align-content: center;
 }
 
+.form-custom2{
+    width:30%;
+    margin:auto;
+    background-color:#f5f5f5;
+    border:1px solid rgb(209, 208, 208);
+    border-radius: 4px;
+    padding: 2%;
+    align-content: center;
+    display:none;
+}
+
+.form-custom3{
+    width:30%;
+    margin:auto;
+    background-color:#f5f5f5;
+    border:1px solid rgb(209, 208, 208);
+    border-radius: 4px;
+    padding: 2%;
+    align-content: center;
+    display:none;
+}
+
 
 .form-control.sized-input{
 
@@ -38,4 +60,8 @@
 
 .btn.btn-primary.sized-input{
     width:80%;
+}
+
+#backbutton{
+    display: none;
 }

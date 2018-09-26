@@ -40,4 +40,29 @@ $(document).ready(()=>{
         }
     });
 
+    $('#signinbutton').on('click',()=>{
+        $('.form-custom').toggle();
+        $('.form-custom2').toggle();
+        if($('#signinbutton').text() == 'Create an account'){
+            $('#signinbutton').text("Log In");
+        }else{
+            $('#signinbutton').text("Create an account"); 
+        }
+        
+    
+    });
+
+    $('#forgot-pwd').on('click',()=>{
+        $('.form-custom').hide();
+        $('.form-custom2').hide();
+        $('.form-custom3').show();
+        $('#signinbutton').hide();
+        $('#backbutton').show();
+    });
+
+    $('#reg-button').on('click',()=>{
+        console.log($('#forgot-mail').text());
+    });
+
+
 });
