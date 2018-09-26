@@ -26,17 +26,62 @@ $(document).ready(()=>{
         let email = $('#mail').val();
         let pwd = $('#pwd').val();
         let confPwd = $('#conf-pwd').val();
-        if(((nome,cognome,data,email,pwd,confPwd) != ('')) && (pwd === confPwd)){
+        if(((nome,cognome,data,email,pwd,confPwd) != ('')) && (pwd === confPwd) && (pwd.lenght()>8)){
             console.log(nome+' '+cognome+' '+data+' '+email+' '+pwd);
             $('#success-box').slideDown();
             setTimeout(()=>{
                 $('#success-box').slideUp();
             },3000);
+
+
         }else{
             $('#alert-box').slideDown();
             setTimeout(()=>{
                 $('#alert-box').slideUp();
             },3000);
+
+            if(nome == ''){
+                $('#name').addClass('is-invalid');
+                setTimeout(()=>{
+                    $('#name').removeClass('is-invalid');
+                },3000);
+            }
+
+            if(cognome == ''){
+                $('#last-name').addClass('is-invalid');
+                setTimeout(()=>{
+                    $('#last-name').removeClass('is-invalid');
+                },3000);
+            }
+
+            if(data ==''){
+                $('#date').addClass('is-invalid');
+                setTimeout(()=>{
+                    $('#date').removeClass('is-invalid');
+                },3000);
+            }
+
+            if(email == ''){
+                $('#mail').addClass('is-invalid');
+                setTimeout(()=>{
+                    $('#mail').removeClass('is-invalid');
+                },3000);
+            }
+
+            if((pwd == '' ) || (pwd.lenght() < 8)){
+                $('#pwd').addClass('is-invalid');
+                setTimeout(()=>{
+                    $('#pwd').removeClass('is-invalid');
+                },3000);
+            }
+
+            if(confPwd == ''|| (confPwd.lenght() < 8)){
+                $('#conf-pwd').addClass('is-invalid');
+                setTimeout(()=>{
+                    $('#conf-pwd').removeClass('is-invalid');
+                },3000);
+            }
+
         }
     });
 
@@ -60,8 +105,8 @@ $(document).ready(()=>{
         $('#backbutton').show();
     });
 
-    $('#reg-button').on('click',()=>{
-        console.log($('#forgot-mail').text());
+    $('#forgot-button').on('click',()=>{
+        console.log($('#forgot-mail').val());
     });
 
 
